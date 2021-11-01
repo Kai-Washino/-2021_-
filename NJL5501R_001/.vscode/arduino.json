@@ -1,0 +1,5 @@
+{
+    "port": "COM3",
+    "board": "arduino:avr:uno",
+    "sketch": "NJL5501R_001.ino"
+}
