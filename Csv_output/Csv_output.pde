@@ -57,8 +57,8 @@ int time_k = 0;
 
 //実験によって変える
 String[] drinkOrder = {
-    "水", "レモン", "水", "レモン"
-    //"レモン", "水", "レモン", "水"
+    //"水", "レモン", "水", "レモン"
+    "レモン", "水", "レモン", "水"
 }; 
 //String [] drinkOrder = new {"シロップ","水","水","シロップ"};
 
@@ -66,9 +66,9 @@ String[] drinkOrder = {
 
 
 void setup() {
-    size(1400, 800);
+    size(2400, 800);
     //size(graphWidth, graphHeight);
-    frameRate(60);
+    frameRate(10);
     
     
     println(Serial.list());
@@ -110,7 +110,7 @@ void draw() {
     text(s, graphPointX + 500, graphPointY - 40);
     
     textSize(30);
-    text((String.valueOf(timeMax[time_k] - (time_cnt)) + "秒後に" + String.valueOf(section[time_i][time_j])), 650, 750);
+    text((String.valueOf(timeMax[time_k] - (time_cnt)) + "秒後に" + String.valueOf(section[time_i][time_j])), 1800, 250);
 
     text(String.valueOf(time_i), 1000, 750);
     text(String.valueOf(time_j), 1100, 750);
@@ -172,7 +172,7 @@ void draw() {
                         time_initial = time;
                         time_first = false;
                     }
-                    time_cnt = (time - time_initial) / 500;
+                    time_cnt = (time - time_initial) / 1000;
                 }
             }
         }
