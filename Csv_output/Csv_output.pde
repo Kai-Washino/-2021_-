@@ -6,7 +6,7 @@ String datastr;
 int time;
 PrintWriter output; 
 boolean Save = false;
-boolean end = false;C:\Users\S2\Downloads\processing-3.5.4-windows64\processing-3.5.4
+boolean end = false;
 String s = "Not Save now";
 String str_format = "time(ms), value";
 

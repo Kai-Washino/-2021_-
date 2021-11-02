@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run",
+            "command": "C:\\Users\\S2\\Downloads\\processing-3.5.4-windows64\\processing-3.5.4\\processing-java.exe",
+            "type": "process",
+            "args": [
+              "--force",
+              "--sketch=${fileDirname}",
+              "--run"
+            ],
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            },
+            "presentation": {
+              "reveal": "always",
+              "panel": "new"
+            }
+          }
+    ]
+  }
+  
